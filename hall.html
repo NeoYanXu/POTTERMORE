@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>霍格沃茨礼堂</title>
+<link href="css/hall.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="off" style="background-color:transparent;" onclick="jumpback()">
+  <img src="img/direct.png" width="70px">
+	</div>
+<div class="hoglogo">
+	<img src="img/hoglogojpg.png" width="500px">	
+</div>
+<div class="ceremony" onclick="ceremony()">
+	<h1>分院仪式</h1>
+</div>
+<div class="Chrismas" onclick="Chrismas()">
+	<h1>圣诞晚会</h1>
+</div>
+	<div class="ghost" onclick="ghost()">
+	<h1>幽灵舞会</h1>
+</div>
+	<div class="cup" onclick="cup()">
+	<h1>学院杯</h1>
+</div>
+
+<script>
+   	function ceremony(){
+		window.location.href="ceremony.html";
+	}	
+	   	function Chrismas(){
+		window.location.href="Chrismas.html";
+	}
+	   	function ghost(){
+		window.location.href="ghost.html";
+	}
+	   	function cup(){
+		window.location.href="cup.html";
+	}
+		function jumpback(){
+		window.location.href='map.html';
+	}
+
+</script>
+</body>
+</html>

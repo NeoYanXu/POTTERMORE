@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>学院杯</title>
+<link href="css/cup.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="dbli"><img src="img/dbli.png" width="200px"></div>
+	<div class="talk">
+	<div class="submit">
+		<h>请输入你的学院：</h>
+<select id="uname">
+  <option value ="格兰芬多!!!">格兰芬多</option>
+  <option value ="赫奇帕奇!!!">赫奇帕奇</option>
+  <option value="拉文克劳!!!">拉文克劳</option>
+  <option value="斯莱特林!!!">斯莱特林</option>
+</select>
+	</div>
+		<div class="little">
+		</div>
+	</div>
+	
+		<div class="current"><p>邓布利多：<br>又是一年过去了！在尽情享受这些美味佳肴之前，我必须麻烦大家听听一个老头子的陈词滥调。<br>这是多么精彩的一年啊！你们的小脑瓜里肯定都比过去丰富了一些……前面有整个暑假在等着你们，可以让你们在下学期开始之前，好好把那些东西消化消化，让脑子里腾出空来……<br>现在，据我所知，我们首先必须进行学院杯的颁奖仪式，各学院的具体得分如下……<br><br>获得今年学院杯的是——</p></div>
+	<button onclick="showUname()">submit</button>
+		<div id="uname-show"></div>
+      
+<script>
+		function showUname(){
+			document.getElementById("uname-show").innerHTML = "<h1>" + document.getElementById("uname").value + "</h1>";
+		}
+	function next(){
+
+  var len = $("form").children().length;
+
+  var index = $("form .current").index();
+
+  if(index<len-1){
+
+    $("form div").eq(index+1).addClass("current").siblings().removeClass("current");
+
+  }
+
+}
+
+	</script>	
+</body>
+</html>

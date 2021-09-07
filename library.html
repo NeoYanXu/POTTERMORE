@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>霍格沃茨图书馆</title>
+<link href="css/library.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</head>
+
+<body>
+<div class="off" style="background-color:transparent;" onclick="jumpback()">
+  <img src="img/direct.png" width="70px">
+	</div>
+	
+	<div class="hemin">
+	 <img src="img/hemin2.png" width="400px">
+	</div>
+	<div class="luoen">
+	 <img src="img/luoen2.png" width="400px">
+	</div>
+	<div class="talk">
+	 <img src="img/page.png" width="800px">
+	</div>
+    <div class="title"><p>欢迎来到霍格沃茨图书馆</p></div>
+	<div class="check"><p>请查阅你想找的书目</p></div>
+<select onchange="cl(this)">
+    <option value="1" >《神奇的魁地奇球》</option>
+    <option value="2">《二十世纪的大巫师》</option>
+    <option value="3">《当代著名魔法家名录》</option>
+    <option value="4" >《现代魔法的重大发现》</option>
+    <option value="5" >《近代巫术发展研究》</option>
+	
+  
+</select>
+
+<div class="book">
+    <div id="div1">《神奇的魁地奇球》 (Quidditch Through the Ages)是一本介绍魁地奇的历史、发展与规则的书籍。本书由肯尼沃思·惠斯普所作，是霍格沃茨魔法学校图书馆中最受欢迎的书籍之一。学校图书管理员平斯夫人说这本书几乎每天都要被“被毛手毛脚地翻来翻去，被滴上哈喇子，受到大家的虐待”，但是校长阿不思·邓布利多认为，这对书籍本身来说是一种褒扬之辞。这本书被偷窃咒保护，由惠滋·哈德图书公司出版发行。 </div>
+    <div id="div2" style="display:none;">《二十世纪的大巫师》 (Great Wizards of the Twentieth Century)是一本介绍20世纪著名巫师的书籍。这本书可以在霍格沃茨图书馆借到。1991-1992学年时，哈利·波特、罗恩·韦斯莱和赫敏·格兰杰曾在查找与尼可·勒梅有关的资料时查阅过这本书，但并没有找到任何有用的信息。后来他们才知道，因为勒梅的年龄已经超过六百岁，因此这本书中不大可能包含与他有关的信息[2]。</div>
+    <div id="div3" style="display:none;">《当代著名魔法家名录》 (Notable Magical Names of Our Time)是一本介绍当代杰出巫师的书籍。这本书籍可以在霍格沃茨图书馆借阅到。 </div>
+   
+    <div id="div4" style="display:none;">《现代魔法的重大发现》 (Important Modern Magical Discoveries)是一本介绍魔法世界在现代的重大发现的书籍。这本书可以在霍格沃茨图书馆找到。 </div>
+    <div id="div5" style="display:none;">《近代巫术发展研究》 (A Study of Recent Developments in Wizardry)是一本介绍魔法领域最新发展的书籍，可以在霍格沃茨图书馆找到。 </div>
+</div>
+<script>
+	function jumpback(){
+		window.location.href='map.html';
+	}
+    function cl(obj){
+        $(obj).next("div").find("div").each(function(){
+            $(this).hide();
+        });
+        $("#div" + obj.value).show();
+    }
+</script>
+
+</body>
+	
+
+</html>
