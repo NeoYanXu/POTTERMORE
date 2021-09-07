@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	background-image: url("../img/hall.png");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+
+}
+.hoglogo{
+	position:absolute;
+    right:-50px; 
+	bottom:380px;
+}
+.ceremony{
+	width:280px;
+	position: absolute;
+	right:620px;
+	bottom:500px;
+	font-family:方正姚体;
+	font-size:30px;
+	text-align: center;
+    color: white;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+	cursor:pointer;
+}
+.ceremony:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+.Chrismas{
+	width:280px;
+	position: absolute;
+	right:620px;
+	bottom:200px;
+	font-family:方正姚体;
+	font-size:30px;
+	text-align: center;
+    color: white;
+    text-shadow: 0 0 20px #4090E3, 10px -10px 30px #1960E7, -20px -20px 40px #2AB993, 20px -40px 50px #3AA4D3, -20px -60px 60px #3E41DD, 0 -80px 70px #5C3FCE, 10px -90px 60px #538DE6;
+	cursor:pointer;
+}
+.Chrismas:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+.ghost{
+	width:280px;
+	position: absolute;
+	right:620px;
+	bottom:50px;
+	font-family:方正姚体;
+	font-size:30px;
+	text-align: center;
+    color: white;
+    text-shadow: 0 0 20px #6A9113, 10px -10px 30px #125C11, -20px -20px 40px #13390B, 20px -40px 50px #072709, -20px -60px 60px #031E00, 0 -80px 70px #07220D, 10px -90px 60px #141517;
+	cursor:pointer;
+}
+.ghost:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+.cup{
+	width:280px;
+	position: absolute;
+	right:620px;
+	bottom:350px;
+	font-family:方正姚体;
+	font-size:30px;
+	text-align: center;
+    color: white;
+    text-shadow: 0 0 20px #923AD2, 10px -10px 30px #D02580, -20px -20px 40px #D93355, 20px -40px 50px #fd1d1d, -20px -60px 60px #AF4E35, 0 -80px 70px #ECBD1E, 10px -90px 60px #fcb045;
+	cursor:pointer;
+}
+.cup:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+.off{
+	cursor:pointer;
+}

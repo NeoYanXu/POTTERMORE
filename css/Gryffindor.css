@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	background-image: url("../img/gelan.jpg");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+
+}
+.off{
+	position: absolute;
+    cursor:pointer;
+}
+.Harry{
+	position:absolute;
+	right:220px;
+	bottom:0px;
+}
+.luoen{
+	position:absolute;
+	right:1000px;
+	bottom:0px;
+}
+.hemin{
+	position:absolute;
+	right:625px;
+	bottom:0px;	
+}
+form{
+	  position:absolute;
+	  width:500px;
+	  right:525px;
+	  bottom:550px; 
+}
+form div{  display:none;
+           font-style: italic;
+	       font-family:Monotype Corsiva;
+	       font-size:20px;
+	       color:#663525;
+	       text-shadow:-1px -1px #9E7948,1px 1px #333; 
+}
+
+  form .current{display:block;}
+.paper{
+      position:absolute;
+	  right:475px;
+	  bottom:380px; 
+}
+button{
+	position:absolute;
+    right:625px;
+	bottom:500px; 
+    border: none;
+    width:80px;
+	height:25px;
+	
+}
+button.back{
+	position:absolute;
+    right:900px;
+	bottom:500px; 
+
+}
+button.next{
+	position:absolute;
+    right:550px;
+	bottom:500px;
+}

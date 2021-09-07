@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	background-image: url("../img/hall2.png");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+}
+@keyframes fade-in {  
+    0% {opacity: 0;}/*初始状态 透明度为0*/  
+    40% {opacity: 0;}/*过渡状态 透明度为0*/  
+    100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+@-webkit-keyframes fade-in {/*针对webkit内核*/  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+} 
+.gelan{
+	animation: fade-in;/*动画名称*/  
+    animation-duration: 1s;/*动画持续时间*/  
+    -webkit-animation:fade-in 1s;/*针对webkit内核*/  
+	position:absolute;
+	right:1200px;
+	bottom:400px; 
+	cursor:pointer;
+}
+
+.gelan:hover .word01{
+	display:block;
+}
+.img01:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+
+.word01 {
+	display:none; 
+	position:absolute;
+	right:-675px;
+	bottom:-150px; 
+    width:400px;
+	font-style: italic;
+	font-family:Monotype Corsiva;
+	font-size:25px;
+	color:#000000;
+	text-shadow:-1px -1px #9E7948,1px 1px #333; 
+
+}
+.sly{
+		animation: fade-in;/*动画名称*/  
+    animation-duration: 2s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2s;/*针对webkit内核*/  
+	position:absolute;
+	right:100px;
+	bottom:400px; 
+	cursor:pointer;
+}
+
+.sly:hover .word02{
+	display:block;
+}
+.img02:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+
+.word02{
+	display:none; 
+	position:absolute;
+	right:450px;
+	bottom:-200px; 
+    width:400px;
+	font-style: italic;
+	font-family:Monotype Corsiva;
+	font-size:25px;
+	color:#000000;
+	text-shadow:-1px -1px #9E7948,1px 1px #333; 
+}
+.heqi{
+		animation: fade-in;/*动画名称*/  
+    animation-duration: 3s;/*动画持续时间*/  
+    -webkit-animation:fade-in 3s;/*针对webkit内核*/  
+	position:absolute;
+	right:1200px;
+	bottom:50px; 
+	cursor:pointer;
+}
+
+.heqi:hover .word03{
+	display:block;
+}
+.img03:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+
+.word03{
+	display:none; 
+	position:absolute;
+	right:-670px;
+	bottom:200px; 
+    width:400px;
+	font-style: italic;
+	font-family:Monotype Corsiva;
+	font-size:25px;
+	color:#000000;
+	text-shadow:-1px -1px #9E7948,1px 1px #333; 
+}
+.lawen{
+		animation: fade-in;/*动画名称*/  
+    animation-duration: 4s;/*动画持续时间*/  
+    -webkit-animation:fade-in 4s;/*针对webkit内核*/  
+	position:absolute;
+	right:100px;
+	bottom:50px; 
+	cursor:pointer;
+}
+
+.lawen:hover .word04{
+	display:block;
+}
+.img04:hover{
+	transform:scale(1.1);
+	transition:0.5s; 
+}
+
+.word04{
+	display:none; 
+	position:absolute;
+	right:440px;
+	bottom:200px; 
+    width:400px;
+	font-style: italic;
+	font-family:Monotype Corsiva;
+	font-size:25px;
+	color:#000000;
+	text-shadow:-1px -1px #9E7948,1px 1px #333; 
+}
+.fenyuan{
+		animation: fade-in;/*动画名称*/  
+    animation-duration: 5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 5s;/*针对webkit内核*/  
+	position:absolute;
+	bottom:-50px; 
+	right:100px; 
+}
