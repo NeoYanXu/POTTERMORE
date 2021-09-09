@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>与赫敏的对话</title>
+<link href="css/hemin.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min01.js"></script>
+</head>
+
+<body>
+	<div class="hemin">
+	<img src="img/hemin2.png" width="500px">
+	</div>
+	
+	<div class="talk">
+	<img src="img/chat2.png" width="1300px" height="600px">
+	</div>
+	
+	<form>
+
+    <div class="current">赫敏：哦！你在这！我正到处找你呢！[看到你的瞬间，赫敏眼睛兴奋地亮了起来。]</div>
+
+    <div>你：嘿，赫敏，你怎么一个人在这里？<br>[赫敏牵起你的手急匆匆走到舞会中心，左顾右盼，像是在躲避什么人。]</div>
+
+    <div>[你们在舞会中心停下，圣诞挂灯上的槲寄生被施了某种魔法，缠绕着在你们头上野蛮生长。赫敏微微喘气，吐出白色的鼻息，一抹红晕爬上她的脸颊，鼻尖沁出晶莹的细密汗珠。]</div>
+	<div>[你撩起赫敏额间垂下的一缕棕色碎发，轻轻别到她耳后]。<br>你：你在躲着谁吗？哈利和罗恩呢？</div>
+	<div>赫敏：哈利和金妮在一起呢，至于罗恩......哼，我不知道，也没有兴趣知道他在哪。大概是和他的新女友在哪个角落你侬我侬吧，反正不关我的事。我在躲麦克拉根，这个烦人的家伙，自从上次邀请他之后，他就一直不停地缠着我。</div>
+	<div>赫敏：嘿，能帮我一个忙吗？</div>
+	<div>你：你说。</div>
+	<div>赫敏：一个不情之请，你也可以拒绝的，或许，你需要我当你的舞伴吗？你也是一个人吗？</div>
+	<div>你：是为了摆脱麦克拉根吗？</div>
+	<div>赫敏：...是的，但也不完全是，你愿意吗？</div>
+	<div>你：如果我能得到全年级第一的作业指导，嗯，那我很愿意。</div>
+	<div>赫敏:来吧。我不会是一个让人失望的舞伴的。</div>
+	</form>
+		
+  <button class="back" onclick="prev();">Back</button>
+
+  <button class="next" onclick="next();">Next</button>
+<script>
+	function jumpback(){
+		window.location.href='map.html';
+	}
+
+function prev(){
+
+  var index = $("form .current").index();
+
+  if(index>0){
+
+    $("form div").eq(index-1).addClass("current").siblings().removeClass("current");
+
+  }
+
+}
+
+
+function next(){
+
+  var len = $("form").children().length;
+
+  var index = $("form .current").index();
+
+  if(index<len-1){
+
+    $("form div").eq(index+1).addClass("current").siblings().removeClass("current");
+
+  }
+
+}
+
+</script>
+</body>
+</html>
